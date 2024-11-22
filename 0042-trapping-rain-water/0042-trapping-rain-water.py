@@ -13,8 +13,7 @@ class Solution:
                 if height[left] >= left_max:
                     left_max = height[left] 
                 else:
-                    water_trapped += left_max - height[left]  # 고인 물의 양 계산
-                left += 1
+                    water_trapped += left_max - height[left]  # 고인 물
             else:
                 # 오른쪽이 더 낮은 경우
                 if height[right] >= right_max:
